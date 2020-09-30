@@ -14,6 +14,7 @@ public class RasterBufferedImage implements Raster {
 
     public void repaint(Graphics graphics) {
         graphics.drawImage(img, 0, 0, null);
+        // pro zájemce - co dělá observer - https://stackoverflow.com/a/1684476
     }
 
     public void draw(RasterBufferedImage raster) {
@@ -21,7 +22,6 @@ public class RasterBufferedImage implements Raster {
         graphics.setColor(new Color(color));
         graphics.fillRect(0, 0, getWidth(), getHeight());
         graphics.drawImage(raster.img, 0, 0, null);
-        // pro zájemce - co dělá observer - https://stackoverflow.com/a/1684476
     }
 
     public BufferedImage getImg() {
