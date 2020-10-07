@@ -10,9 +10,9 @@ public interface Raster {
     /**
      * Set clear color
      *
-     * @param color clear color
+     * @param clearColor clear color
      */
-    void setClearColor(int color);
+    void setClearColor(int clearColor);
 
     /**
      * Get horizontal size
