@@ -18,10 +18,10 @@ public class RasterBufferedImage implements Raster {
     }
 
     public void draw(RasterBufferedImage raster) {
-        Graphics graphics = getGraphics();
-        graphics.setColor(new Color(clearColor));
-        graphics.fillRect(0, 0, getWidth(), getHeight());
-        graphics.drawImage(raster.img, 0, 0, null);
+        Graphics g = getGraphics();
+        g.setColor(new Color(clearColor));
+        g.fillRect(0, 0, getWidth(), getHeight());
+        g.drawImage(raster.img, 0, 0, null);
     }
 
     public BufferedImage getImg() {
@@ -44,7 +44,7 @@ public class RasterBufferedImage implements Raster {
 
     @Override
     public void clear() {
-        Graphics g = img.getGraphics();
+        Graphics g = getGraphics();
         g.setColor(new Color(clearColor));
         g.fillRect(0, 0, img.getWidth(), img.getHeight());
     }
