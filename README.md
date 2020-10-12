@@ -9,8 +9,8 @@
 
 ## Testy
 
-1. test - 3. týden 14. října (středa) a 19. října (pondělí)
-2. test - PŘEDBĚŽNĚ 7./8. týden 11./18. listopadu (středa) a 9./16. listopadu (pondělí)
+1. test - 4. týden 21. října (středa) a 26. října (pondělí)
+2. test - PŘEDBĚŽNĚ 8. týden 18. listopadu (středa) a 16. listopadu (pondělí)
 3. test - PŘEDBĚŽNĚ 11./12. týden 9./16. prosince (středa) a 7./14. prosince (pondělí)
 
 
