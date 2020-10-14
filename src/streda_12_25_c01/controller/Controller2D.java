@@ -6,8 +6,7 @@ import streda_12_25_c01.rasterize.Raster;
 import streda_12_25_c01.rasterize.TrivialLineRasterizer;
 import streda_12_25_c01.view.Panel;
 
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import java.awt.event.*;
 
 public class Controller2D {
 
@@ -44,5 +43,15 @@ public class Controller2D {
                 );
             }
         });
+
+        panel.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyReleased(KeyEvent e) {
+                if (e.getKeyCode() == KeyEvent.VK_P) {
+                    System.out.println("P was released");
+                }
+            }
+        });
     }
+
 }

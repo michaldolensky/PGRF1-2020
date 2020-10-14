@@ -21,16 +21,8 @@ public abstract class LineRasterizer {
         this.color = new Color(color);
     }
 
-    public void rasterize(Line line) {
-        //TODO
-    }
+    public abstract void rasterize(Line line);
 
-    public void rasterize(int x1, int y1, int x2, int y2, Color color) {
-        //TODO
-    }
-
-    protected void drawLine(int x1, int y1, int x2, int y2) {
-
-    }
+    public abstract void rasterize(int x1, int y1, int x2, int y2, Color color);
 
 }
