@@ -5,6 +5,7 @@ import streda_17_25_c02.model.Line;
 import java.awt.*;
 
 public abstract class LineRasterizer {
+
     Raster raster;
     Color color;
 
@@ -20,15 +21,8 @@ public abstract class LineRasterizer {
         this.color = new Color(color);
     }
 
-    public void rasterize(Line line) {
+    public abstract void rasterize(Line line);
 
-    }
+    public abstract void rasterize(int x1, int y1, int x2, int y2, Color color);
 
-//    public void rasterize(int x1, int y1, int x2, int y2, Color color) {
-//
-//    }
-//
-//    protected void drawLine(int x1, int y1, int x2, int y2) {
-//
-//    }
 }
