@@ -6,9 +6,7 @@ import pondeli_11_35_c06.rasterize.TrivialLineRasterizer;
 import pondeli_11_35_c06.view.Panel;
 
 import java.awt.*;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+import java.awt.event.*;
 
 public class Controller2D {
 
@@ -41,6 +39,18 @@ public class Controller2D {
             public void mouseDragged(MouseEvent e) {
                 raster.clear();
                 trivialLineRasterizer.rasterize(mx, my, e.getX(), e.getY(), Color.RED);
+            }
+        });
+
+        panel.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyReleased(KeyEvent e) {
+                if (e.getKeyCode() == KeyEvent.VK_SPACE) {
+                    System.out.println("mezerník");
+                }
+                System.out.println(e.getKeyCode());
+                System.out.println(e.getKeyChar());
+                System.out.println("----");
             }
         });
     }

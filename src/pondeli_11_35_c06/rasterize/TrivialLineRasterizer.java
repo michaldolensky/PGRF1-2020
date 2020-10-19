@@ -1,22 +1,11 @@
 package pondeli_11_35_c06.rasterize;
 
-import pondeli_11_35_c06.model.Line;
-
 import java.awt.*;
 
 public class TrivialLineRasterizer extends LineRasterizer {
 
     public TrivialLineRasterizer(Raster raster) {
         super(raster);
-    }
-
-    @Override
-    public void rasterize(Line line) {
-        rasterize(
-                line.getX1(), line.getY1(),
-                line.getX2(), line.getY2(),
-                new Color(line.getColor())
-        );
     }
 
     @Override

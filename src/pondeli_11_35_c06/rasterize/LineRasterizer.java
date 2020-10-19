@@ -21,15 +21,9 @@ public abstract class LineRasterizer {
     }
 
     public void rasterize(Line line) {
-        //TODO
+        rasterize(line.getX1(), line.getY1(), line.getX2(), line.getY2(), new Color(line.getColor()));
     }
 
-    public void rasterize(int x1, int y1, int x2, int y2, Color color) {
-        //TODO
-    }
-
-    protected void drawLine(int x1, int y1, int x2, int y2) {
-
-    }
+    public abstract void rasterize(int x1, int y1, int x2, int y2, Color color);
 
 }
