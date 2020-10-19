@@ -9,13 +9,13 @@
 
 ## Testy
 
-1. test - 4. týden 21. října (středa) a 26. října (pondělí)
-2. test - PŘEDBĚŽNĚ 8. týden 18. listopadu (středa) a 16. listopadu (pondělí)
-3. test - PŘEDBĚŽNĚ 11./12. týden 9./16. prosince (středa) a 7./14. prosince (pondělí)
+1. test - 4. týden 21. října (středeční) a 26. října (pondělní)
+2. test - PŘEDBĚŽNĚ 8. týden 18. listopadu (středeční) a 16. listopadu (pondělní)
+3. test - PŘEDBĚŽNĚ 11./12. týden 9./16. prosince (středeční) a 7./14. prosince (pondělní)
 
 
 ## Projekty
 
-1. projekt - 5. týden 28. října (středa) a 26. října (pondělí)
-2. projekt - PŘEDBĚŽNĚ 18. listopadu (středa)  a 16. listopadu (pondělí)
+1. projekt - 5. týden 28. října (středeční) a 31. října (pondělní)
+2. projekt - PŘEDBĚŽNĚ 18. listopadu (středeční) a 16. listopadu (pondělní)
 3. projekt - zatím neurčeno, někdy na konci semestru; pravděpodobně koncem 11. týdne (13. prosince)
