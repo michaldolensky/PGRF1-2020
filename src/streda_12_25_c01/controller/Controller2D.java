@@ -1,6 +1,8 @@
 package streda_12_25_c01.controller;
 
+import streda_12_25_c01.fill.SeedFiller;
 import streda_12_25_c01.model.Line;
+import streda_12_25_c01.model.Point;
 import streda_12_25_c01.rasterize.LineRasterizer;
 import streda_12_25_c01.rasterize.Raster;
 import streda_12_25_c01.rasterize.TrivialLineRasterizer;
@@ -13,6 +15,7 @@ public class Controller2D {
     private final Panel panel;
     private final Raster raster;
     private final LineRasterizer trivialLineRasterizer;
+    private final SeedFiller seedFiller;
 
     private int mx, my;
 
@@ -21,6 +24,7 @@ public class Controller2D {
         this.raster = panel.getRaster();
 
         trivialLineRasterizer = new TrivialLineRasterizer(raster);
+        seedFiller = new SeedFiller(raster);
 
         initListeners();
     }
@@ -31,6 +35,15 @@ public class Controller2D {
             public void mousePressed(MouseEvent e) {
                 mx = e.getX();
                 my = e.getY();
+            }
+
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                if (e.isShiftDown()) {
+                    seedFiller.setSeed(new Point(e.getX(), e.getY()));
+                    seedFiller.setFillColor(0x00ff00); // Color.YELLOW.getRGB();
+                    seedFiller.fill();
+                }
             }
         });
 
