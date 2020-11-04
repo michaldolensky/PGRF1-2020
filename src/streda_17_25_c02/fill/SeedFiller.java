@@ -31,7 +31,9 @@ public class SeedFiller implements Filler {
         fillSeed(x, y);
     }
 
+    // VM options -Xss80m
     private void fillSeed(int xx, int yy) {
+        // ošetřit velikost plátna
         if (raster.getPixel(xx, yy) == backgroundColor) {
             raster.setPixel(xx, yy, fillColor);
             fillSeed(xx, yy + 1); // dolů
