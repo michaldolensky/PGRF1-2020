@@ -10,6 +10,7 @@ public class SeedFiller implements Filler {
     private int backgroundColor;
     private Point seed;
     private int fillColor;
+//    private PatternFill patternFill;
 
     public SeedFiller(Raster raster) {
         this.raster = raster;
@@ -27,6 +28,10 @@ public class SeedFiller implements Filler {
 //        return this;
     }
 
+//    public void setPatternFill(PatternFill patternFill) {
+//        this.patternFill = patternFill;
+//    }
+
     @Override
     public void fill() {
         seedFill(seed.x, seed.y);
@@ -37,6 +42,7 @@ public class SeedFiller implements Filler {
         // ošetřit velikost plátna
         if (raster.getPixel(x, y) == backgroundColor) {
             raster.setPixel(x, y, fillColor);
+//            raster.setPixel(x, y, patternFill.paint(x, y));
             seedFill(x + 1, y); // doprava
             seedFill(x - 1, y); // doleva
             seedFill(x, y + 1); // dolu

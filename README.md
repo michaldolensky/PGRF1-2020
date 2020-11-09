@@ -17,5 +17,5 @@
 ## Projekty
 
 1. projekt - 5. týden 28. října (středeční) a 31. října (pondělní)
-2. projekt - 8. týden 18. listopadu (středeční) a 16. listopadu (pondělní)
+2. projekt - 8. týden 22. listopadu (středeční) a 20. listopadu (pondělní)
 3. projekt - zatím neurčeno, někdy na konci semestru; pravděpodobně koncem 11. týdne (13. prosince)

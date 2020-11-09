@@ -1,5 +1,6 @@
 package pondeli_11_35_c06.controller;
 
+import pondeli_11_35_c06.fill.PatternFill;
 import pondeli_11_35_c06.fill.SeedFiller;
 import pondeli_11_35_c06.model.Point;
 import pondeli_11_35_c06.rasterize.LineRasterizer;
@@ -16,6 +17,7 @@ public class Controller2D {
     private final Raster raster;
     private final LineRasterizer trivialLineRasterizer;
     private final SeedFiller seedFiller;
+    private final PatternFill patternFill;
 
     private int mx, my;
 
@@ -25,6 +27,19 @@ public class Controller2D {
 
         trivialLineRasterizer = new TrivialLineRasterizer(raster);
         seedFiller = new SeedFiller(raster);
+//        patternFill = new PatternFill() {
+//            @Override
+//            public int paint(int x, int y) {
+//                if (x % 2 == 0) return 0x00ff00;
+//                else return 0xffff00;
+//            }
+//        };
+        patternFill = (x, y) -> {
+            if (x % 2 == 0) return 0x00ff00;
+            else return 0xffff00;
+        };
+
+//        patternFill = (x, y) -> x % 2 == 0 ? 0x00ff00 : 0xffff00;
 
         initListeners();
 

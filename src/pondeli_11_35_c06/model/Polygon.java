@@ -47,6 +47,10 @@ public class Polygon {
         }
     }
 
+    public List<Point> getPoints() {
+        return points;
+    }
+
     // getter
     // setter
 }
