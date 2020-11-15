@@ -1,5 +1,6 @@
 package streda_12_25_c01.controller;
 
+import streda_12_25_c01.fill.PatternFill;
 import streda_12_25_c01.fill.SeedFiller;
 import streda_12_25_c01.model.Line;
 import streda_12_25_c01.model.Point;
@@ -16,6 +17,7 @@ public class Controller2D {
     private final Raster raster;
     private final LineRasterizer trivialLineRasterizer;
     private final SeedFiller seedFiller;
+    private final PatternFill patternFill;
 
     private int mx, my;
 
@@ -25,6 +27,11 @@ public class Controller2D {
 
         trivialLineRasterizer = new TrivialLineRasterizer(raster);
         seedFiller = new SeedFiller(raster);
+        patternFill = (x, y) -> {
+            if (x % 2 == 0) return 0xffff00;
+            else return 0xff00ff;
+        };
+//        patternFill = (x, y) -> (x % 2 == 0 ? 0xffff00 : 0xff00ff);
 
         initListeners();
     }

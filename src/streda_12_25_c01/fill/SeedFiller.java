@@ -6,6 +6,7 @@ import streda_12_25_c01.rasterize.Raster;
 public class SeedFiller implements Filler {
 
     private final Raster raster;
+//    private PatternFill patternFill;
 
     private int backgroundColor;
     private int fillColor;
@@ -35,6 +36,7 @@ public class SeedFiller implements Filler {
     private void seedFill(int x, int y) {
         // ošetřit velikost plátna
         if (raster.getPixel(x, y) == backgroundColor) {
+//            int color = patternFill.paint(x, y);
             raster.setPixel(x, y, fillColor);
             seedFill(x + 1, y); // doprava
             seedFill(x - 1, y); // doleva
