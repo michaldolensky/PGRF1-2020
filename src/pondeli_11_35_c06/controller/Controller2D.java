@@ -7,6 +7,7 @@ import pondeli_11_35_c06.rasterize.LineRasterizer;
 import pondeli_11_35_c06.rasterize.Raster;
 import pondeli_11_35_c06.rasterize.TrivialLineRasterizer;
 import pondeli_11_35_c06.view.Panel;
+import transforms.*;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -51,6 +52,18 @@ public class Controller2D {
 //            raster.setPixel(20, y, 0xffff00);
 //            raster.setPixel(500, y, 0xffff00);
 //        }
+
+//        Point2D p1 = new Point2D(0, 100);
+//        Point2D p2 = new Point2D(100, 110);
+//        trivialLineRasterizer.rasterize((int) p1.getX(), (int) p1.getY(), (int) p2.getX(), (int) p2.getY(), Color.MAGENTA);
+//
+////        Mat3 transl = new Mat3Transl2D(10, 100).mul(new Mat3Scale2D(2));
+//        Mat3 transl = new Mat3Scale2D(2).mul(new Mat3Transl2D(10, 100));
+//        // měřítko (scale), rotace, posunutí (translace)
+//        p1 = p1.mul(transl);
+//        p2 = p2.mul(transl);
+//
+//        trivialLineRasterizer.rasterize((int) p1.getX(), (int) p1.getY(), (int) p2.getX(), (int) p2.getY(), Color.CYAN);
     }
 
     private void initListeners() {
