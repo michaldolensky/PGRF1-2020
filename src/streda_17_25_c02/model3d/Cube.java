@@ -4,6 +4,7 @@ import transforms.Point3D;
 
 import java.awt.*;
 
+// třída Cube byla na cvičení, v projektu 2 jiná tělesa
 public class Cube extends Solid {
 
     public Cube() {
